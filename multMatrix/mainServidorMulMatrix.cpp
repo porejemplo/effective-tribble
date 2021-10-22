@@ -10,33 +10,33 @@ using namespace std;
 
 void threadClient(int clientID)
 {
-        operaciones_imp* op=new operaciones_imp(clientID);
+		multmatrix_imp* op=new multmatrix_imp(clientID);
 
-        while(!op->getSalir())
-        {
-                op->atenderOperacion();
-        }
+		while(!op->getSalir())
+		{
+				op->atenderOperacion();
+		}
 
-        delete op;
+		delete op;
 }
 
 
 int main(int argc,char** argv)
 {
-        //iniciar servidor
-        int socketID=initServer(SERVER_PORT);
+	//iniciar servidor
+	int socketID=initServer(SERVER_PORT);
 
-        while(true)
-        {	//bucle conexiones clientes
-                if(checkNewConnections()) //si hay nueva conexion
-                {
-                //atenderlas
-                 int clientID=getNewConnection();
-                 std::thread* th=new std::thread(threadClient,clientID);
-                 th->detach();
-                }
-                //sleep(1);
-        }
+	while(true)
+	{	//bucle conexiones clientes
+		if(checkNewConnections()) //si hay nueva conexion
+		{
+		//atenderlas
+			int clientID=getNewConnection();
+			std::thread* th=new std::thread(threadClient,clientID);
+			th->detach();
+		}
+		//sleep(1);
+	}
 
-        return 0;
+	return 0;
 }

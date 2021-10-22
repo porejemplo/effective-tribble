@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named mainServidorMulMatrix
+
+# Build rule for target.
+mainServidorMulMatrix: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mainServidorMulMatrix
+.PHONY : mainServidorMulMatrix
+
+# fast build rule for target.
+mainServidorMulMatrix/fast:
+	$(MAKE) -f CMakeFiles/mainServidorMulMatrix.dir/build.make CMakeFiles/mainServidorMulMatrix.dir/build
+.PHONY : mainServidorMulMatrix/fast
+
+#=============================================================================
+# Target rules for targets named mainClienteMulMatrix
+
+# Build rule for target.
+mainClienteMulMatrix: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mainClienteMulMatrix
+.PHONY : mainClienteMulMatrix
+
+# fast build rule for target.
+mainClienteMulMatrix/fast:
+	$(MAKE) -f CMakeFiles/mainClienteMulMatrix.dir/build.make CMakeFiles/mainClienteMulMatrix.dir/build
+.PHONY : mainClienteMulMatrix/fast
+
+#=============================================================================
 # Target rules for targets named multMatrix
 
 # Build rule for target.
@@ -122,6 +148,60 @@ multMatrix: cmake_check_build_system
 multMatrix/fast:
 	$(MAKE) -f CMakeFiles/multMatrix.dir/build.make CMakeFiles/multMatrix.dir/build
 .PHONY : multMatrix/fast
+
+mainClienteMulMatrix.o: mainClienteMulMatrix.cpp.o
+
+.PHONY : mainClienteMulMatrix.o
+
+# target to build an object file
+mainClienteMulMatrix.cpp.o:
+	$(MAKE) -f CMakeFiles/mainClienteMulMatrix.dir/build.make CMakeFiles/mainClienteMulMatrix.dir/mainClienteMulMatrix.cpp.o
+.PHONY : mainClienteMulMatrix.cpp.o
+
+mainClienteMulMatrix.i: mainClienteMulMatrix.cpp.i
+
+.PHONY : mainClienteMulMatrix.i
+
+# target to preprocess a source file
+mainClienteMulMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles/mainClienteMulMatrix.dir/build.make CMakeFiles/mainClienteMulMatrix.dir/mainClienteMulMatrix.cpp.i
+.PHONY : mainClienteMulMatrix.cpp.i
+
+mainClienteMulMatrix.s: mainClienteMulMatrix.cpp.s
+
+.PHONY : mainClienteMulMatrix.s
+
+# target to generate assembly for a file
+mainClienteMulMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles/mainClienteMulMatrix.dir/build.make CMakeFiles/mainClienteMulMatrix.dir/mainClienteMulMatrix.cpp.s
+.PHONY : mainClienteMulMatrix.cpp.s
+
+mainServidorMulMatrix.o: mainServidorMulMatrix.cpp.o
+
+.PHONY : mainServidorMulMatrix.o
+
+# target to build an object file
+mainServidorMulMatrix.cpp.o:
+	$(MAKE) -f CMakeFiles/mainServidorMulMatrix.dir/build.make CMakeFiles/mainServidorMulMatrix.dir/mainServidorMulMatrix.cpp.o
+.PHONY : mainServidorMulMatrix.cpp.o
+
+mainServidorMulMatrix.i: mainServidorMulMatrix.cpp.i
+
+.PHONY : mainServidorMulMatrix.i
+
+# target to preprocess a source file
+mainServidorMulMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles/mainServidorMulMatrix.dir/build.make CMakeFiles/mainServidorMulMatrix.dir/mainServidorMulMatrix.cpp.i
+.PHONY : mainServidorMulMatrix.cpp.i
+
+mainServidorMulMatrix.s: mainServidorMulMatrix.cpp.s
+
+.PHONY : mainServidorMulMatrix.s
+
+# target to generate assembly for a file
+mainServidorMulMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles/mainServidorMulMatrix.dir/build.make CMakeFiles/mainServidorMulMatrix.dir/mainServidorMulMatrix.cpp.s
+.PHONY : mainServidorMulMatrix.cpp.s
 
 main_multMatrix.o: main_multMatrix.cpp.o
 
@@ -156,6 +236,8 @@ multmatrix.o: multmatrix.cpp.o
 
 # target to build an object file
 multmatrix.cpp.o:
+	$(MAKE) -f CMakeFiles/mainServidorMulMatrix.dir/build.make CMakeFiles/mainServidorMulMatrix.dir/multmatrix.cpp.o
+	$(MAKE) -f CMakeFiles/mainClienteMulMatrix.dir/build.make CMakeFiles/mainClienteMulMatrix.dir/multmatrix.cpp.o
 	$(MAKE) -f CMakeFiles/multMatrix.dir/build.make CMakeFiles/multMatrix.dir/multmatrix.cpp.o
 .PHONY : multmatrix.cpp.o
 
@@ -165,6 +247,8 @@ multmatrix.i: multmatrix.cpp.i
 
 # target to preprocess a source file
 multmatrix.cpp.i:
+	$(MAKE) -f CMakeFiles/mainServidorMulMatrix.dir/build.make CMakeFiles/mainServidorMulMatrix.dir/multmatrix.cpp.i
+	$(MAKE) -f CMakeFiles/mainClienteMulMatrix.dir/build.make CMakeFiles/mainClienteMulMatrix.dir/multmatrix.cpp.i
 	$(MAKE) -f CMakeFiles/multMatrix.dir/build.make CMakeFiles/multMatrix.dir/multmatrix.cpp.i
 .PHONY : multmatrix.cpp.i
 
@@ -174,8 +258,94 @@ multmatrix.s: multmatrix.cpp.s
 
 # target to generate assembly for a file
 multmatrix.cpp.s:
+	$(MAKE) -f CMakeFiles/mainServidorMulMatrix.dir/build.make CMakeFiles/mainServidorMulMatrix.dir/multmatrix.cpp.s
+	$(MAKE) -f CMakeFiles/mainClienteMulMatrix.dir/build.make CMakeFiles/mainClienteMulMatrix.dir/multmatrix.cpp.s
 	$(MAKE) -f CMakeFiles/multMatrix.dir/build.make CMakeFiles/multMatrix.dir/multmatrix.cpp.s
 .PHONY : multmatrix.cpp.s
+
+multmatrix_imp.o: multmatrix_imp.cpp.o
+
+.PHONY : multmatrix_imp.o
+
+# target to build an object file
+multmatrix_imp.cpp.o:
+	$(MAKE) -f CMakeFiles/mainServidorMulMatrix.dir/build.make CMakeFiles/mainServidorMulMatrix.dir/multmatrix_imp.cpp.o
+.PHONY : multmatrix_imp.cpp.o
+
+multmatrix_imp.i: multmatrix_imp.cpp.i
+
+.PHONY : multmatrix_imp.i
+
+# target to preprocess a source file
+multmatrix_imp.cpp.i:
+	$(MAKE) -f CMakeFiles/mainServidorMulMatrix.dir/build.make CMakeFiles/mainServidorMulMatrix.dir/multmatrix_imp.cpp.i
+.PHONY : multmatrix_imp.cpp.i
+
+multmatrix_imp.s: multmatrix_imp.cpp.s
+
+.PHONY : multmatrix_imp.s
+
+# target to generate assembly for a file
+multmatrix_imp.cpp.s:
+	$(MAKE) -f CMakeFiles/mainServidorMulMatrix.dir/build.make CMakeFiles/mainServidorMulMatrix.dir/multmatrix_imp.cpp.s
+.PHONY : multmatrix_imp.cpp.s
+
+multmatrix_stub.o: multmatrix_stub.cpp.o
+
+.PHONY : multmatrix_stub.o
+
+# target to build an object file
+multmatrix_stub.cpp.o:
+	$(MAKE) -f CMakeFiles/mainClienteMulMatrix.dir/build.make CMakeFiles/mainClienteMulMatrix.dir/multmatrix_stub.cpp.o
+.PHONY : multmatrix_stub.cpp.o
+
+multmatrix_stub.i: multmatrix_stub.cpp.i
+
+.PHONY : multmatrix_stub.i
+
+# target to preprocess a source file
+multmatrix_stub.cpp.i:
+	$(MAKE) -f CMakeFiles/mainClienteMulMatrix.dir/build.make CMakeFiles/mainClienteMulMatrix.dir/multmatrix_stub.cpp.i
+.PHONY : multmatrix_stub.cpp.i
+
+multmatrix_stub.s: multmatrix_stub.cpp.s
+
+.PHONY : multmatrix_stub.s
+
+# target to generate assembly for a file
+multmatrix_stub.cpp.s:
+	$(MAKE) -f CMakeFiles/mainClienteMulMatrix.dir/build.make CMakeFiles/mainClienteMulMatrix.dir/multmatrix_stub.cpp.s
+.PHONY : multmatrix_stub.cpp.s
+
+utils.o: utils.cpp.o
+
+.PHONY : utils.o
+
+# target to build an object file
+utils.cpp.o:
+	$(MAKE) -f CMakeFiles/mainServidorMulMatrix.dir/build.make CMakeFiles/mainServidorMulMatrix.dir/utils.cpp.o
+	$(MAKE) -f CMakeFiles/mainClienteMulMatrix.dir/build.make CMakeFiles/mainClienteMulMatrix.dir/utils.cpp.o
+.PHONY : utils.cpp.o
+
+utils.i: utils.cpp.i
+
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.cpp.i:
+	$(MAKE) -f CMakeFiles/mainServidorMulMatrix.dir/build.make CMakeFiles/mainServidorMulMatrix.dir/utils.cpp.i
+	$(MAKE) -f CMakeFiles/mainClienteMulMatrix.dir/build.make CMakeFiles/mainClienteMulMatrix.dir/utils.cpp.i
+.PHONY : utils.cpp.i
+
+utils.s: utils.cpp.s
+
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.cpp.s:
+	$(MAKE) -f CMakeFiles/mainServidorMulMatrix.dir/build.make CMakeFiles/mainServidorMulMatrix.dir/utils.cpp.s
+	$(MAKE) -f CMakeFiles/mainClienteMulMatrix.dir/build.make CMakeFiles/mainClienteMulMatrix.dir/utils.cpp.s
+.PHONY : utils.cpp.s
 
 # Help Target
 help:
@@ -185,13 +355,30 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... mainServidorMulMatrix"
+	@echo "... mainClienteMulMatrix"
 	@echo "... multMatrix"
+	@echo "... mainClienteMulMatrix.o"
+	@echo "... mainClienteMulMatrix.i"
+	@echo "... mainClienteMulMatrix.s"
+	@echo "... mainServidorMulMatrix.o"
+	@echo "... mainServidorMulMatrix.i"
+	@echo "... mainServidorMulMatrix.s"
 	@echo "... main_multMatrix.o"
 	@echo "... main_multMatrix.i"
 	@echo "... main_multMatrix.s"
 	@echo "... multmatrix.o"
 	@echo "... multmatrix.i"
 	@echo "... multmatrix.s"
+	@echo "... multmatrix_imp.o"
+	@echo "... multmatrix_imp.i"
+	@echo "... multmatrix_imp.s"
+	@echo "... multmatrix_stub.o"
+	@echo "... multmatrix_stub.i"
+	@echo "... multmatrix_stub.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 

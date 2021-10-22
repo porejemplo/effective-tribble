@@ -14,8 +14,9 @@
  */
 multMatrix::multMatrix()
 {
-    srand(getpid());
+	srand(getpid());
 }
+
 /**
  * @brief multMatrix::readMatrix Método que lee un fichero de disco duro y devuelve un objeto "matrix_t". En caso de no
  * existir el fichero, devolverá NULL. El fichero se encuetra en formato texto, la primera línea contiene el número de
@@ -25,24 +26,24 @@ multMatrix::multMatrix()
  */
 matrix_t *multMatrix::readMatrix(const char *fileName)
 {
-    FILE* f=fopen(fileName,"r");
-    if(f==0)
-    {
-        std::cout<< "ERROR: Fichero " << std::string(fileName) <<" no existe\n";
-        return NULL;
-    }
-    matrix_t* matrix=new matrix_t[1];
+	FILE* f=fopen(fileName,"r");
+	if(f==0)
+	{
+		std::cout<< "ERROR: Fichero " << std::string(fileName) <<" no existe\n";
+		return NULL;
+	}
+	matrix_t* matrix=new matrix_t[1];
 
-    fscanf(f,"%d %d",&matrix->rows,&matrix->cols);
-    std::cout<<"Leidos fila y columna: "<<matrix->rows<<" "<<matrix->cols<<"\n";
-    matrix->data=new int[matrix->rows*matrix->cols];
-    for(int i=0;i<matrix->rows*matrix->cols;i++)
-        {
-            fscanf(f,"%d",&matrix->data[i]);
-        }
+	fscanf(f,"%d %d",&matrix->rows,&matrix->cols);
+	std::cout<<"Leidos fila y columna: "<<matrix->rows<<" "<<matrix->cols<<"\n";
+	matrix->data=new int[matrix->rows*matrix->cols];
+	for(int i=0;i<matrix->rows*matrix->cols;i++)
+	{
+		fscanf(f,"%d",&matrix->data[i]);
+	}
 
-    fclose(f);
-    return matrix;
+	fclose(f);
+	return matrix;
 }
 
 /**
@@ -56,31 +57,32 @@ matrix_t *multMatrix::readMatrix(const char *fileName)
  */
 matrix_t *multMatrix::multMatrices(matrix_t *m1, matrix_t* m2)
 {
+	std::cout<< m1->cols + "\n";
+	if(m1->cols!=m2->rows)
+	{
+		std::cout<<"ERROR: Matrices no compatibles\n";
+		return NULL;
+	}
+	matrix_t* mres=new matrix_t[1];
+	mres->rows=m1->rows;
+	mres->cols=m2->cols;
+	mres->data=new int[mres->rows*mres->cols];;
+	for(int i=0;i<m1->rows;i++)//each row m1
+	{
+		for(int j=0;j<m2->cols;j++) //each col m2
+		{
+			mres->data[i*mres->cols+j]=0;
 
-    if(m1->cols!=m2->rows)
-    {
-        std::cout<<"ERROR: Matrices no compatibles\n";
-        return NULL;
-    }
-     matrix_t* mres=new matrix_t[1];
-     mres->rows=m1->rows;
-     mres->cols=m2->cols;
-     mres->data=new int[mres->rows*mres->cols];;
-     for(int i=0;i<m1->rows;i++)//each row m1
-     {
-         for(int j=0;j<m2->cols;j++) //each col m2
-         {
-            mres->data[i*mres->cols+j]=0;
+			for(int k=0;k<m1->cols;k++) //dot mult m1 row by m2 col
+			{
+				mres->data[i*mres->cols+j]+=m1->data[i*m1->cols+k]*m1->data[k*m2->cols+j];
+			}
+		}
+	}
 
-            for(int k=0;k<m1->cols;k++) //dot mult m1 row by m2 col
-            {
-                mres->data[i*mres->cols+j]+=m1->data[i*m1->cols+k]*m1->data[k*m2->cols+j];
-            }
-         }
-     }
-
-     return mres;
+	return mres;
 }
+
 /**
  * @brief multMatrix::writeMatrix Método que escribe a fichero el contenido de la matriz pasada por parámetros
  * @param m Matriz cuyos datos se escribirán en fichero
@@ -88,14 +90,14 @@ matrix_t *multMatrix::multMatrices(matrix_t *m1, matrix_t* m2)
  */
 void multMatrix::writeMatrix(matrix_t *m,const char* fileName)
 {
- FILE* f=fopen(fileName,"w");
- fprintf(f,"%d %d\n",m->rows,m->cols);
+	FILE* f=fopen(fileName,"w");
+	fprintf(f,"%d %d\n",m->rows,m->cols);
 
- for(int i=0;i<m->rows*m->cols;i++)
-     {
-         fprintf(f,"%d\n",m->data[i]);
-     }
- fclose(f);
+	for(int i=0;i<m->rows*m->cols;i++)
+		{
+			fprintf(f,"%d\n",m->data[i]);
+		}
+	fclose(f);
 }
 
 /**
@@ -108,15 +110,15 @@ void multMatrix::writeMatrix(matrix_t *m,const char* fileName)
 matrix_t* multMatrix::createRandMatrix(int rows, int cols)
 {
 
-    matrix_t* m=new matrix_t[1];
-    m->rows=rows;
-    m->cols=cols;
-    m->data=new int[rows*cols];
-    for(int i=0;i<rows*cols;i++)
-        m->data[i]=rand();
-
-    return m;
+	matrix_t* m=new matrix_t[1];
+	m->rows=rows;
+	m->cols=cols;
+	m->data=new int[rows*cols];
+	for(int i=0;i<rows*cols;i++)
+		m->data[i]=rand();
+	return m;
 }
+
 /**
  * @brief createIdentity Método que crea una matriz identidad de un tamaño dado
  * @param rows Número de filas
@@ -125,22 +127,21 @@ matrix_t* multMatrix::createRandMatrix(int rows, int cols)
  */
 matrix_t* multMatrix::createIdentity(int rows, int cols)
 {
-    matrix_t* m=new matrix_t[1];
-    m->rows=rows;
-    m->cols=cols;
-    m->data=new int[rows*cols];
-    memset(m->data,0,sizeof(int)*rows*cols);
-    for(int i=0;i<rows;i++)
-            m->data[i*cols+i]=1;
-    return m;
+	matrix_t* m=new matrix_t[1];
+	m->rows=rows;
+	m->cols=cols;
+	m->data=new int[rows*cols];
+	memset(m->data,0,sizeof(int)*rows*cols);
+	for(int i=0;i<rows;i++)
+			m->data[i*cols+i]=1;
+	return m;
 }
-
 
 /**
  * @brief multMatrix::~multMatrix Destructor de la clase, no tiene nada ahora mismo
  */
 multMatrix::~multMatrix()
 {
-    //empty destructor
+	//empty destructor
 }
 

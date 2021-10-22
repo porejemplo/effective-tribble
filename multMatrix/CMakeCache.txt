@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=multMatrix
+CMAKE_PROJECT_NAME:STATIC=mainServidorMulMatrix
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -208,6 +208,18 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+mainClienteMulMatrix_BINARY_DIR:STATIC=/home/pordefecto/Documentos/ProgramacionSistemasDistribuidos/Practica1/Practica1/multMatrix
+
+//Value Computed by CMake
+mainClienteMulMatrix_SOURCE_DIR:STATIC=/home/pordefecto/Documentos/ProgramacionSistemasDistribuidos/Practica1/Practica1/multMatrix
+
+//Value Computed by CMake
+mainServidorMulMatrix_BINARY_DIR:STATIC=/home/pordefecto/Documentos/ProgramacionSistemasDistribuidos/Practica1/Practica1/multMatrix
+
+//Value Computed by CMake
+mainServidorMulMatrix_SOURCE_DIR:STATIC=/home/pordefecto/Documentos/ProgramacionSistemasDistribuidos/Practica1/Practica1/multMatrix
 
 //Value Computed by CMake
 multMatrix_BINARY_DIR:STATIC=/home/pordefecto/Documentos/ProgramacionSistemasDistribuidos/Practica1/Practica1/multMatrix
