@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/mainServidorMulMatrix.dir/mainServidorMulMatrix.cpp.o CMakeFiles/mainServidorMulMatrix.dir/multmatrix_imp.cpp.o CMakeFiles/mainServidorMulMatrix.dir/multmatrix.cpp.o CMakeFiles/mainServidorMulMatrix.dir/utils.cpp.o  -o mainServidorMulMatrix  -lpthread 

@@ -1,0 +1,5 @@
+/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build/CMakeFiles/rebuild_cache.dir
+/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build/CMakeFiles/edit_cache.dir
+/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build/CMakeFiles/mainServidorMulMatrix.dir
+/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build/CMakeFiles/mainClienteMulMatrix.dir
+/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build/CMakeFiles/multMatrix.dir

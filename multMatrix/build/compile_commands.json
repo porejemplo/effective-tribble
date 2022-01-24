@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/mainServidorMulMatrix.dir/mainServidorMulMatrix.cpp.o -c /home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/mainServidorMulMatrix.cpp",
+  "file": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/mainServidorMulMatrix.cpp"
+},
+{
+  "directory": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/mainServidorMulMatrix.dir/multmatrix_imp.cpp.o -c /home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/multmatrix_imp.cpp",
+  "file": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/multmatrix_imp.cpp"
+},
+{
+  "directory": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/mainServidorMulMatrix.dir/multmatrix.cpp.o -c /home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/multmatrix.cpp",
+  "file": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/multmatrix.cpp"
+},
+{
+  "directory": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/mainServidorMulMatrix.dir/utils.cpp.o -c /home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/utils.cpp",
+  "file": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/utils.cpp"
+},
+{
+  "directory": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/mainClienteMulMatrix.dir/mainClienteMulMatrix.cpp.o -c /home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/mainClienteMulMatrix.cpp",
+  "file": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/mainClienteMulMatrix.cpp"
+},
+{
+  "directory": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/mainClienteMulMatrix.dir/multmatrix_stub.cpp.o -c /home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/multmatrix_stub.cpp",
+  "file": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/multmatrix_stub.cpp"
+},
+{
+  "directory": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/mainClienteMulMatrix.dir/multmatrix.cpp.o -c /home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/multmatrix.cpp",
+  "file": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/multmatrix.cpp"
+},
+{
+  "directory": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/mainClienteMulMatrix.dir/utils.cpp.o -c /home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/utils.cpp",
+  "file": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/utils.cpp"
+},
+{
+  "directory": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/multMatrix.dir/main_multMatrix.cpp.o -c /home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/main_multMatrix.cpp",
+  "file": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/main_multMatrix.cpp"
+},
+{
+  "directory": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++11 -o CMakeFiles/multMatrix.dir/multmatrix.cpp.o -c /home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/multmatrix.cpp",
+  "file": "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/multmatrix.cpp"
+}
+]

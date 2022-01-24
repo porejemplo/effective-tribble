@@ -1,0 +1,77 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mainServidorMulMatrix",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mainClienteMulMatrix::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mainClienteMulMatrix-Debug-669944af6a324ac95b1c.json",
+					"name" : "mainClienteMulMatrix",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mainServidorMulMatrix::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mainServidorMulMatrix-Debug-8b0889d455889ca2a109.json",
+					"name" : "mainServidorMulMatrix",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "multMatrix::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multMatrix-Debug-d0f3d8e2092812709aa9.json",
+					"name" : "multMatrix",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix/build",
+		"source" : "/home/pordefecto/Documentos/GitHub/effective-tribble/multMatrix"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}
